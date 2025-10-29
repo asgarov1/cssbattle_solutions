@@ -1,0 +1,36 @@
+<div class="triangle"></div>
+<div class="triangle back red"></div>
+<div class="triangle right red"></div>
+<div class="triangle right back"></div>
+<style>
+
+    body {
+        margin: 0;
+        background: #F2F2B6;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-top: 130px solid #FF6D00;
+        position: absolute;
+        bottom: 85px;
+        left: 60px;
+    }
+
+    .back {
+        translate: 20px;
+        z-index: -1;
+    }
+
+    .red {
+        border-top: 130px solid #FD4602;
+    }
+
+    .right {
+        left: 170px;
+        rotate: 180deg
+    }
+</style>

@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="left">
+        <div class="inner">
+            <div class="inner"></div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="inner">
+            <div class="inner"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="inner">
+            <div class="inner"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div {
+        background: #F7EC7D;
+        width: 100px;
+        border-radius: 50px 50px 0 0;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        background: #62306D;
+        border-radius: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .left,.right,.middle {
+        height: 150px;
+    }
+
+    .middle {
+        height: 250px;
+    }
+
+    .inner {
+        background: #AA445F;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner > .inner {
+        height: 60px;
+        width: 60px;
+        background: #E38F66;
+    }
+
+    .middle > .inner {
+        background: #E38F66;
+    }
+
+    .middle > .inner > .inner {
+        background: #AA445F;
+    }
+
+</style>

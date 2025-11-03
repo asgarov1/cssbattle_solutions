@@ -1,0 +1,34 @@
+<div g></div>
+<div y></div>
+<style>
+    body {
+        background: #998235;
+    }
+    [g],[y] {
+        background: #1A4341;
+        width: 80;
+        height: 100;
+        border-radius: 0 50px;
+        position: absolute;
+        top: 60;
+        left: 110
+    }
+    [g]::after,[y]::after {
+        content: "";
+        width: 80;
+        height: 100;
+        background: #1A4341;
+        position: fixed;
+        border-radius: 0 50px;
+        transform: translate(100px, 80px) scaleY(-1)
+    }
+    [y],[y]::after {
+        background: #F3AC3C;
+        width: 80;
+        height: 60;
+        top: 180
+    }
+    [y]::after {
+        transform: translate(100px, -120px) scaleY(-1)
+    }
+</style>

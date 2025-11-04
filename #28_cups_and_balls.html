@@ -1,0 +1,48 @@
+<div line>
+    <div circle dark></div>
+    <div ghost light></div>
+    <div ghost dark></div>
+    <div circle light></div>
+</div>
+<div line>
+    <div ghost light inverted></div>
+    <div circle dark></div>
+    <div circle light></div>
+    <div ghost dark inverted></div>
+</div>
+<style>
+    body {
+        margin: 0;
+        background: #1A4341;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        gap: 20px;
+    }
+    [line]{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    div {
+        width: 50;
+        height: 50;
+    }
+    [dark] {
+        background: #998235;
+    }
+    [light] {
+        background: #F3AC3C;
+    }
+    [circle] {
+        border-radius: 50%;
+    }
+    [ghost] {
+        border-radius: 50% 50% 0 0;
+    }
+    [inverted] {
+        rotate: 180deg;
+    }
+</style>

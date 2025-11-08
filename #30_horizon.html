@@ -1,48 +1,30 @@
-<div line>
-    <div circle dark></div>
-    <div ghost light></div>
-    <div ghost dark></div>
-    <div circle light></div>
-</div>
-<div line>
-    <div ghost light inverted></div>
-    <div circle dark></div>
-    <div circle light></div>
-    <div ghost dark inverted></div>
-</div>
+<div a></div>
+<div b></div>
+<div c></div>
+<div d></div>
 <style>
     body {
         margin: 0;
-        background: #1A4341;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        gap: 20px;
-    }
-    [line]{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
     }
     div {
-        width: 50;
-        height: 50;
+        width: 100%;
     }
-    [dark] {
-        background: #998235;
+    [a],[b] {
+        height: 50px;
     }
-    [light] {
-        background: #F3AC3C;
+    [c],[d] {
+        height: 100px;
     }
-    [circle] {
-        border-radius: 50%;
+    [a] {
+        background: #F7EC7D;
     }
-    [ghost] {
-        border-radius: 50% 50% 0 0;
+    [b] {
+        background: #E38F66;
     }
-    [inverted] {
-        rotate: 180deg;
+    [c] {
+        background: #AA445F;
+    }
+    [d] {
+        background: #62306D;
     }
 </style>

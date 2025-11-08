@@ -1,0 +1,25 @@
+<div></div>
+<style>
+    body {
+        display: grid;
+        place-content: center;
+    }
+    div {
+        width: 50px;
+        height: 200px;
+        transform: rotate(45deg);
+        background: linear-gradient(to bottom, #A3A368 0 75px, #FBE18C 75px 125px, #A3A368 125px 175px);
+    }
+
+    div::before {
+        content: "";
+        width: 50px;
+        height: 75px;
+        background-color: #F3AC3C;
+        position: absolute;
+        top: 63;
+        left: -63;
+        transform: rotate(90deg);
+        box-shadow: #F3AC3C 0px -125px;
+    }
+</style>

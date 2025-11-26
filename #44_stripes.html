@@ -1,0 +1,33 @@
+<div></div>
+<style>
+    body {
+        background: #1A4341;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div {
+        width: 160px;
+        height: 180px;
+        background: linear-gradient(to bottom, #F3AC3C 0 20px,
+        #1A4341 20px 40px,
+        #F3AC3C 40px 60px,
+        #1A4341 60px 80px,
+        #F3AC3C 80px 100px,
+        #1A4341 100px 120px,
+        #F3AC3C 120px 140px,
+        #1A4341 140px 160px,
+        #F3AC3C 160px 180px
+        );
+    }
+    div::before {
+        content: "";
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        position: fixed;
+        background: #1A4341;
+        translate: -270px -60px;
+        box-shadow: 400px 0 #1A4341;
+    }
+</style>

@@ -1,0 +1,51 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<div back></div>
+<style>
+    body {
+        background: #1A4341;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    [a] {
+        width: 30px;
+        height: 100%;
+        background: #F3AC3C;
+    }
+    [b] {
+        width: 52.5%;
+        height: 100%;
+        border: 30px solid #F3AC3C;
+        position: fixed;
+        bottom: 30%;
+    }
+    [c] {
+        width: 67.5%;
+        height: 30px;
+        border: none;
+        border-bottom: 30px solid #998235;
+        position: fixed;
+        bottom: 10%;
+        z-index: -1;
+    }
+    [left], [right] {
+        position: fixed;
+        width: 30px;
+        height: 70%;
+        background: #F3AC3C;
+        left: 16.25%;
+    }
+    [right] {
+        left: 76.25%;
+    }
+    [back] {
+        z-index: -1;
+        position: fixed;
+        width: 22.5%;
+        height: 50%;
+        border: 30px solid #998235;
+        translate: 0 -60px;
+    }
+</style>

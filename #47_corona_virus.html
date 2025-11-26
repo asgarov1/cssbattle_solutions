@@ -1,0 +1,45 @@
+<div circle>
+    <div a></div>
+</div>
+<div lineA></div>
+<div lineB></div>
+<div lineC></div>
+<style>
+    body {
+        background: #1A4341;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    [circle] {
+        width: 100px;
+        height: 100px;
+        background: #F3AC3C;
+        border-radius: 50%;
+    }
+    [a] {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #998235;
+        translate: 20px 20px;
+        box-shadow: 15px 40px 0 -5px #998235, 40px -10px 0 -10px #998235;
+    }
+    [lineA],[lineB],[lineC] {
+        position: fixed;
+        width: 10px;
+        height: 180px;
+        background: #F3AC3C;
+        border-radius: 10px;
+        translate: 0 -10px;
+        z-index: -1;
+    }
+    [lineB] {
+        translate: 9px -5px;
+        transform: rotate(60deg);
+    }
+    [lineC] {
+        transform: rotate(120deg);
+        translate: 9px 5px;
+    }
+</style>

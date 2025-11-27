@@ -1,0 +1,73 @@
+<div top></div>
+<div bottle-neck></div>
+<div neck></div>
+<div main></div>
+<style>
+    body {
+        background: #1A4341;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin: 0px;
+    }
+    [top], [bottle-neck], [neck], [main] {
+        width: 100px;
+        height: 140px;
+        background: #F3AC3C;
+        border-radius: 20px;
+    }
+    [main] {
+        background: linear-gradient(to bottom, #F3AC3C 50px, #998235 50px 140px)
+    }
+    [main]::before {
+        content: "";
+        position: fixed;
+        width: 50px;
+        height: 80px;
+        border-radius: 50px 50px 0 0;
+        background: #998235;
+        translate: 0px 30px;
+    }
+    [main]::after {
+        content: "";
+        position: fixed;
+        width: 50px;
+        height: 60px;
+        border-radius: 0 0 50px 50px;
+        background: #F3AC3C;
+        translate: 50px 20px;
+    }
+    [neck] {
+        width: 50px;
+        height: 20px;
+        border-radius: 10px 10px 0 0;
+    }
+    [bottle-neck] {
+        width: 20px;
+        height: 20px;
+        border-radius: 0;
+    }
+    [top] {
+        width: 150px;
+        height: 20px;
+        translate: 25px 0
+    }
+    [top]::after, [top]::before {
+        position: fixed;
+        content: "";
+        width: 20px;
+        height: 30px;
+        border-radius: 0 0 20px 20px;
+        background: #F3AC3C;
+        translate: 130px 10px;
+    }
+    [top]::before {
+        height: 20px;
+        border-radius: 50%;
+        translate: 130px 50px;
+        background: #998235;
+        box-shadow: 0 30px #998235;
+    }
+</style>

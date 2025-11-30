@@ -1,0 +1,36 @@
+<div circle></div>
+<div stick></div>
+<style>
+    body {
+        background: #6592CF;
+        display: grid;
+        place-content: center start;
+    }
+    [stick] {
+        width: 10px;
+        height: 55px;
+        background: #243D83;
+        translate: 36.5px 13px;
+        box-shadow: 45px 0 #243D83, 90px 0 #243D83, 165px 0 #243D83, 210px 0 #243D83, 255px 0 #243D83, 300px 0 #243D83;
+    }
+    [stick]::after {
+        content: "";
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background: #243D83;
+        border-radius: 50%;
+        translate: -5px -5px;
+        box-shadow: 45px 0 #243D83, 90px 0 #243D83, 165px 0 #243D83, 210px 0 #243D83, 255px 0 #243D83, 300px 0 #243D83;
+    }
+    [circle] {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        background: #EEB850;
+        border-radius: 50%;
+        translate: 21.5px 111.5px;
+        z-index: -1;
+        box-shadow: 45px -10px 0 10px #EEB850, 90px 0 #EEB850;
+    }
+</style>

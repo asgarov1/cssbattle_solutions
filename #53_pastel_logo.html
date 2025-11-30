@@ -1,0 +1,37 @@
+<div top></div>
+<div bottom></div>
+<style>
+    body {
+        background: #19191A;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-top: 16.7vh;
+    }
+    [top] {
+        width: 150px;
+        height: 75px;
+        border-radius: 100px 100px 0 0;
+        background: #4F77FF;
+    }
+    [bottom] {
+        width: 150px;
+        height: 75px;
+        border-radius: 0 0 100px 100px;
+        background: linear-gradient(
+                to left,
+                #4F77FF 0 75px,
+                #9AD5FF 75px 100px
+        );
+    }
+    [bottom]::after {
+        display: block;
+        position: relative;
+        content: "";
+        width: 75px;
+        height: 125px;
+        background: #F9E492;
+        z-index: -1;
+    }
+</style>

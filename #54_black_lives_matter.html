@@ -1,0 +1,62 @@
+<div fingers>
+    <div a></div>
+    <div b></div>
+    <div c></div>
+    <div d></div>
+</div>
+<div palm></div>
+<div wrist></div>
+<style>
+    body {
+        background: #F9E492;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 0px;
+    }
+    [palm] {
+        width: 100px;
+        height: 40px;
+        background: #191919;
+        border-radius: 0 0 10px 10px;
+    }
+    [wrist] {
+        width: 50px;
+        height: 45px;
+        background: #191919;
+        border-radius: 0 0 10px 10px;
+    }
+    [fingers] {
+        display: flex;
+        align-items: flex-end;
+        margin: 0 5px 5px 15px;
+        width: 100px;
+        background: transparent;
+        gap: 5px;
+    }
+    [fingers] > div {
+        background: #191919;
+        width: 20px;
+        height: 45px;
+        border-radius: 10px;
+    }
+    [b] {
+        height: 55px !important;
+    }
+    [d] {
+        height: 35px !important;
+    }
+    [palm]::after {
+        content: "";
+        position: fixed;
+        rotate: 60deg;
+        width: 20px;
+        height: 65px;
+        border-radius: 20px;
+        background: #191919;
+        border: 5px solid #F9E492;
+        translate: 2px -33px;
+    }
+</style>

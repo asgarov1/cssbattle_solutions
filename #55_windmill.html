@@ -1,0 +1,38 @@
+<div q1><div e1></div></div>
+<div q2><div e2></div></div>
+<div q3><div e3></div></div>
+<div q4><div e4></div></div>
+<style>
+    body {
+        background: #191919;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    [q1],[q2],[q3],[q4] {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    [q2],[q4] {
+        justify-content: flex-start;
+    }
+    [q3],[q4] {
+        align-items: start;
+    }
+    [e1],[e4] {
+        width: 100px;
+        height: 50px;
+        background: #F9E492;
+        border-radius: 50px 50px 0 0;
+    }
+    [e2],[e3] {
+        width: 50px;
+        height: 100px;
+        background: #4F77FF;
+        border-radius: 0 50px 50px 0;
+    }
+    [e3],[e4] {
+        rotate: 180deg;
+    }
+</style>

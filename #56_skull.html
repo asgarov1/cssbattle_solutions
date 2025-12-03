@@ -1,0 +1,41 @@
+<div top></div>
+<div bottom></div>
+<style>
+    body {
+        background: #191919;
+        display: grid;
+        place-content: center;
+        justify-items: center;
+    }
+    [top], [bottom] {
+        width: 120px;
+        height: 100px;
+        background: #4F77FF;
+        border-radius: 60px 60px 10px 10px;
+    }
+    [top]::after {
+        content: "";
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #191919;
+        translate: 15px 53px;
+        box-shadow: 50px 0 #191919, 25px 28px 0 -10px #191919;
+    }
+    [bottom] {
+        width: 80px;
+        height: 30px;
+        border-radius: 0 0 20px 20px;
+    }
+    [bottom]::after {
+        content: "";
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        background: #191919;
+        border-radius: 20px 20px 0 0;
+        translate: 20px 20px;
+        box-shadow: 15px 0 #191919, 30px 0 #191919;
+    }
+</style>
